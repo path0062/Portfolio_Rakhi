@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Sticky Navigation */
+
+
+/* Make sure all cards have the same height */
+.card {
+  height: auto; /* Remove fixed height */
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* For the images, ensure they don't distort but have the same size */
+.card img {
+  width: 100%;
+  height: 300px;  /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures images are scaled to cover the area without stretching */
+}
+
+/* Ensure the content inside the card is flexible and takes up available space */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures text takes up space */
+}
+
+
+.description.full-text {
+  display: none;
+}
+
+.card:hover .description.full-text {
+  display: block;
+}
+
+.card:hover .description.short-text {
+  display: none;
+}
+
+
+/* Align buttons at the bottom of the card and center them */
+.card-body .btn {
+  align-self: center;  /* Center the button */
+  margin-top: 10px;     /* Space between text and button */
+}
+
+
+/* Ensure that all card text (title and body) looks consistent */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;  /* Adds spacing between the title and the text */
+  text-align: center;  /* Centers the title */
+}
+
+.card-text {
+  font-size: 1rem;
+  text-align: justify;
+  white-space: normal; /* Ensures text wraps */
+  overflow: visible; /* Prevents text from being cut off */
+  display: block; /* Ensures text is always shown */
+}
+
+
+
+
+/* Make sure the button is consistent in size */
+.card-body .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-10px);  /* Slightly lifts the card */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);  /* Adds a subtle shadow */
+  transition: all 0.3s ease;  /* Smooth transition for the effect */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.hero .logo {
+  width: 200px; /* Adjust size based on screen size */
+  height: auto;
+  max-width: 100%; /* Prevents the logo from becoming too large */
+}
+
+.hero .logo-container {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+
+
+.hero .name-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.hero .name-center h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .name-center p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* About Me Section */
+#about {
+  background-color: #f1f1f1;
+  padding: 4rem 0;
+}
+
+#about .container {
+  max-width: 1000px; /* Keeps the content centered */
+}
+
+#about .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .col-md-6 {
+  padding: 2rem;
+}
+
+#about .col-md-6 img {
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* About Me Text */
+#about h2 {
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+footer {
+  background: #222;
+  color: white;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero .logo {
+      width: 50px; /* Smaller logo on smaller screens */
+  }
+
+  .hero .name-center h1 {
+      font-size: 2rem;
+  }
+
+  .hero .name-center p {
+      font-size: 1rem;
+  }
+
+  /* About Me Section */
+  #about .row {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  #about .col-md-6 {
+      padding: 1rem;
+  }
+}
+
+.description.full-text {
+  display: none;
+}
+
+.card:hover .description.full-text {
+  display: block;
+}
+
+.card:hover .description.short-text {
+  display: none;
+}

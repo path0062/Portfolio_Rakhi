@@ -3,177 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakhi Pathania | Portfolio</title>
+    <title>Rakhi Pathania | UX & Media Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-
-    <!-- Hero Section -->
-    <header class="hero d-flex justify-content-between align-items-center py-4 px-5">
-        <div class="logo">
-            <img src="images/logo.png" srcset="images/logo.png 60w, images/logo.png 120w" alt="Logo" class="logo">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <img src="images/logo.png" alt="Logo" class="nav-logo me-2">
+                Rakhi Pathania
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="name-center text-center">
-            <h1 class="mt-3">Rakhi Pathania</h1>
-            <p class="lead">Creative UX & Media Designer | Blending Art & Functionality</p>
+    </nav>
+
+    <header id="hero" class="hero d-flex justify-content-center align-items-center text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Rakhi Pathania</h1>
+            <p class="lead text-uppercase">Creative UX & Media Designer | Blending Art & Functionality</p>
+            <a href="#projects" class="btn btn-primary btn-lg mt-3 shadow-sm">View Work</a>
         </div>
     </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="py-5 bg-light d-flex justify-content-center align-items-center">
+    <section id="about" class="py-5">
         <div class="container">
             <div class="row align-items-center">
-                <!-- Left Side: Image -->
-                <div class="col-md-6">
-                    <img src="images/about_me.jpeg" alt="Profile Picture" class="rounded-circle w-75">
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                    <img src="images/about_me.jpeg" alt="Profile Picture" class="img-fluid rounded-circle about-img">
                 </div>
-                <!-- Right Side: About Me Text -->
-                <div class="col-md-6">
-                    <h2>About Me</h2>
-                    <p>Hi, I'm Rakhi, a passionate UX & Media Designer with a love for creating seamless, engaging, and interactive digital experiences. 
-                      With a background in Interactive Media Design, I blend creativity with functionality to craft visually compelling and user-friendly designs. 
-                      My journey started with content creation, managing YouTube channels, and building digital learning resources. Now, I'm diving deeper into UX, 
-                      web design, and interactive media to turn ideas into impactful experiences. I’m always eager to learn, grow, and contribute to the ever-evolving creative world!</p>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">About Me</h2>
+                    <p>Hi, I'm Rakhi, a dedicated **UX & Media Designer** specializing in creating seamless, interactive digital experiences.</p>
+                    <p>My focus is on UX design and high-fidelity prototyping, underpinned by a solid foundation in digital media management, including maintaining a WordPress site and managing multiple YouTube and Instagram channels.</p>
+                    <p>I bring practical, real-world coordination experience from my 8-month co-op at **NRC**, where I enhanced project organization, streamlined media archives using PhotoShelter, and supported digital and social media teams through scheduling with Hootsuite. I am always eager to learn, grow, and contribute to the creative process!</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
-        
-    <!-- Projects Section -->
-<section id="projects" class="py-5">
-  <div class="container">
-      <h2 class="text-center">Projects</h2>
-      <div class="row">
-          <!-- Project 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="images/webdev_final.png" class="card-img-top" alt="Project 1">
-                <div class="card-body">
-                    <h5 class="card-title">Website Portfolio</h5>
-                    <p class="card-text"> 
-                        <strong>Skills Involved:</strong> Responsive Web Design, Front-End Development, Learning New Frameworks 
-                        <br>
-                        <br> 
-                        <strong>Tools Used:</strong> Bootstrap, VSC, Git, GitHub 
-                    </p>
-                    <a href="https://path0062.github.io/mtm6201-final/" class="btn btn-outline-primary" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-          
-          <!-- Project 2 -->
-          <div class="col-md-4 mb-4">
-              <div class="card">
-                  <img src="images/avatar_icon.png" class="card-img-top" alt="Project 2">
-                  <div class="card-body">
-                      <h5 class="card-title">Avatar Icon for Apple</h5> 
-                        <p class="card-text">
-                            <strong>Skills Involved:</strong> Graphic Design, Icon Design, Vector Art, Scalability, Visual Consistency 
-                            <br>
-                            <br>
-                            <strong>Tools Used:</strong> Adobe Illustrator 
-                      </p>
-                      <a href="https://assets.adobe.com/id/urn:aaid:sc:VA6C2:3a983086-fa04-45bf-8940-4ef965c82825?view=published" class="btn btn-outline-primary" target="_blank">View Project</a>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="images/website.png" class="card-img-top" alt="Project 6">
-                <div class="card-body">
-                    <h5 class="card-title">Kids Learning Website</h5>
-                    <p class="card-text">
-                       <strong>Skills Involved:</strong> Web Design, Responsive Design, Front-End Development, Data Management 
-                        <br>
-                        <br>
-                        <strong>Tools Used:</strong> Wordpress 
-                  </p>
-                      
-                    <a href="https://dhiyara.com/" class="btn btn-outline-primary" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-
-          <!-- Project 4 -->
-          <div class="col-md-4 mb-4">
-              <div class="card">
-                  <img src="images/prototype_figma.png" class="card-img-top" alt="Project 4">
-                  <div class="card-body">
-                      <h5 class="card-title">Website Prototype</h5>
-                      <p class="card-text">
-                          <strong>Skills Involved:</strong> UX/UI Design, Prototyping, Mobile-First Design, User Testing 
-                          <br>
-                          <br>
-                           <strong>Tools Used:</strong> Figma, InVision 
-                        </ul>
-                    </p>
-                      <a href="https://www.figma.com/design/i6KfTEMXEwXwna2bnfcAs2/pathania_rakhi_prototype?node-id=0-1&t=qRm5UyVEpFNaU0EN-1" class="btn btn-outline-primary" target="_blank">View Project</a>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="col-md-4 mb-4">
-              <div class="card">
-                  <img src="images/resturant_moodboard.png" class="card-img-top" alt="Project 5">
-                  <div class="card-body">
-                      <h5 class="card-title">Moodboards</h5>
-                      <p class="card-text">
-                         <strong>Skills Involved:</strong> Visual Design, Branding, Color Theory, Typography, Concept Development 
-                        <br>
-                        <br>
-                        <strong>Tools Used:</strong> Figma, Canva  
-                    </p>
-                    <a href="files/Moodboard.pdf" class="btn btn-outline-primary" target="_blank">View PDF</a>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Project 6 -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="images/brochure_design.png" class="card-img-top" alt="Project 3">
-                <div class="card-body">
-                    <h5 class="card-title">Brochure for Branding Package</h5>
-                    <p class="card-text">
-                         <strong>Skills Involved:</strong> Branding, Print Design, Typography, Layout Design, Visual Storytelling 
-                        <br>
-                        <br>
-                        <strong>Tools Used:</strong> Adobe InDesign
-                  </p>
-                  <a href="files/PathaniaA02_.pdf" class="btn btn-outline-primary" target="_blank">View PDF</a>
-                </div>
-            </div>
-        </div>
-       </div>
-  </div>
-</section>
-   
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light text-center">
+    
+    <section id="skills" class="py-5 bg-light">
         <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your@email.com">monrak910@gmail.com</a></p>
-            <p>
-                <a href="https://github.com/path0062" class="btn btn-dark">GitHub</a>
-                <a href="https://www.youtube.com/@triptacrafts" class="btn btn-danger">YouTube</a>
-                <a href="https://dhiyara.com/" class="btn btn-warning">Website</a>
-            </p>
+            <h2 class="text-center section-title mb-5">Creative Resume: Core Skills</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-group-card p-4 h-100">
+                        <h4 class="skill-title">UX/UI Design</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li class="skill-tag">Figma</li>
+                            <li class="skill-tag">Maze (User Testing)</li>
+                            <li class="skill-tag">Prototyping</li>
+                            <li class="skill-tag">Mobile-First Design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-group-card p-4 h-100">
+                        <h4 class="skill-title">Web Development</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li class="skill-tag">HTML & CSS</li>
+                            <li class="skill-tag">JavaScript</li>
+                            <li class="skill-tag">Bootstrap</li>
+                            <li class="skill-tag">React</li>
+                            <li class="skill-tag">Vue.js</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-group-card p-4 h-100">
+                        <h4 class="skill-title">Design & Media</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li class="skill-tag">Adobe Illustrator</li>
+                            <li class="skill-tag">Photoshop</li>
+                            <li class="skill-tag">InDesign</li>
+                            <li class="skill-tag">Canva</li>
+                            <li class="skill-tag">Premiere Pro (Editing)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-group-card p-4 h-100">
+                        <h4 class="skill-title">CMS & Management</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li class="skill-tag">WordPress</li>
+                            <li class="skill-tag">Shopify</li>
+                            <li class="skill-tag">Drupal</li>
+                            <li class="skill-tag">Git & GitHub</li>
+                            <li class="skill-tag">Hootsuite Scheduling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer class="bg-dark text-white text-center py-3">
-      <p>© 2024 Rakhi Pathania. All rights reserved.</p>
-  </footer>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-4">Featured Projects</h2>
+            <p class="text-center text-muted mb-5">A selection of my work across UX/UI, Web Development, and Branding.</p>
+
+            <div class="text-center mb-5">
+                <button class="btn btn-outline-dark category-btn active" data-category="all">All</button>
+                <button class="btn btn-outline-dark category-btn" data-category="uxui">UX/UI</button>
+                <button class="btn btn-outline-dark category-btn" data-category="webdev">Web Dev</button>
+                <button class="btn btn-outline-dark category-btn" data-category="design">Design/Print</button>
+            </div>
+
+            <div class="row project-list">
+                <div class="col-lg-4 col-md-6 mb-4 project-item webdev">
+                    <div class="card h-100">
+                        <img src="images/webdev_final.png" class="card-img-top project-img" alt="Website Portfolio">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Website Portfolio</h5>
+                            <p class="card-text small text-muted">Web Development | Responsive Design</p>
+                            <p class="card-text flex-grow-1">Demonstrates responsive web design, front-end development, and framework implementation.</p>
+                            <a href="https://path0062.github.io/mtm6201-final/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="col-lg-4 col-md-6 mb-4 project-item design">
+                    <div class="card h-100">
+                        <img src="images/avatar_icon.png" class="card-img-top project-img" alt="Avatar Icon">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Avatar Icon for Apple</h5> 
+                            <p class="card-text small text-muted">Graphic Design | Vector Art</p>
+                            <p class="card-text flex-grow-1">Focus on scalability, visual consistency, and vector art principles using Adobe Illustrator.</p>
+                            <a href="https://assets.adobe.com/id/urn:aaid:sc:VA6C2:3a983086-fa04-45bf-8940-4ef965c82825?view=published" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 project-item webdev">
+                    <div class="card h-100">
+                        <img src="images/website.png" class="card-img-top project-img" alt="Kids Learning Website">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Kids Learning Website</h5>
+                            <p class="card-text small text-muted">Web Development | WordPress</p>
+                            <p class="card-text flex-grow-1">A responsive educational website built on WordPress, highlighting front-end and data management skills.</p>
+                            <a href="https://dhiyara.com/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 project-item uxui">
+                    <div class="card h-100">
+                        <img src="images/prototype_figma.png" class="card-img-top project-img" alt="Website Prototype">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Website Prototype</h5>
+                            <p class="card-text small text-muted">UX/UI Design | Prototyping</p>
+                            <p class="card-text flex-grow-1">Comprehensive prototype demonstrating UX/UI principles, mobile-first design, and user testing workflow.</p>
+                            <a href="https://www.figma.com/design/i6KfTEMXEwXwna2bnfcAs2/pathania_rakhi_prototype?node-id=0-1&t=qRm5UyVEpFNaU0EN-1" class="btn btn-primary mt-auto" target="_blank">View Prototype</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 project-item design">
+                    <div class="card h-100">
+                        <img src="images/resturant_moodboard.png" class="card-img-top project-img" alt="Moodboards">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Restaurant Moodboards</h5>
+                            <p class="card-text small text-muted">Visual Design | Branding</p>
+                            <p class="card-text flex-grow-1">Exploration of visual design, color theory, typography, and concept development for branding.</p>
+                            <a href="files/Moodboard.pdf" class="btn btn-primary mt-auto" target="_blank">View PDF</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 project-item design">
+                    <div class="card h-100">
+                        <img src="images/brochure_design.png" class="card-img-top project-img" alt="Brochure Design">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Branding Package Brochure</h5>
+                            <p class="card-text small text-muted">Print Design | Layout</p>
+                            <p class="card-text flex-grow-1">Demonstrates branding consistency, layout design, and visual storytelling for print materials.</p>
+                            <a href="files/PathaniaA02_.pdf" class="btn btn-primary mt-auto" target="_blank">View PDF</a>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+        </div>
+    </section>
+   
+    <section id="contact" class="py-5 text-center contact-section">
+        <div class="container">
+            <h2 class="section-title mb-4">Get In Touch</h2>
+            <p class="lead mb-4">I'm currently seeking opportunities in UX/UI Design. Let's connect!</p>
+            
+            <p class="h4 mb-4">Email: <a href="mailto:monrak910@gmail.com" class="contact-link">monrak910@gmail.com</a></p>
+            
+            <div class="social-links">
+                <a href="https://github.com/path0062" class="btn btn-dark btn-social" target="_blank">GitHub</a>
+                <a href="https://www.youtube.com/@triptacrafts" class="btn btn-danger btn-social" target="_blank">YouTube</a>
+                <a href="https://dhiyara.com/" class="btn btn-info btn-social" target="_blank">Website</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-3">
+        <p class="mb-0">© 2024 Rakhi Pathania. All rights reserved.</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.category-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    projectItems.forEach(item => {
+                        if (category === 'all' || item.classList.contains(category)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

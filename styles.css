@@ -1,205 +1,230 @@
+/* --- Color Palette --- */
+/* Primary: Warm Orange */
+:root {
+  --color-primary: #FF7F50; /* Coral / Warm Orange */
+  --color-secondary: #C85A5A; /* Muted Red/Brown */
+  --color-dark: #343A40;
+  --color-light: #F8F9FA;
+  --color-text: #495057;
+  --color-bg-light: #fefefe;
+}
+
+/* --- Base & Utilities --- */
 html {
   scroll-behavior: smooth;
 }
-/* Sticky Navigation */
-
-
-/* Make sure all cards have the same height */
-.card {
-  height: auto; /* Remove fixed height */
-  display: flex;
-  flex-direction: column;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg-light);
 }
-
-
-/* For the images, ensure they don't distort but have the same size */
-.card img {
-  width: 100%;
-  height: 300px;  /* Set a fixed height for all images */
-  object-fit: cover; /* Ensures images are scaled to cover the area without stretching */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  position: relative;
+  padding-bottom: 10px;
 }
-
-/* Ensure the content inside the card is flexible and takes up available space */
-.card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Ensures text takes up space */
-}
-
-
-.description.full-text {
-  display: none;
-}
-
-.card:hover .description.full-text {
+.section-title::after {
+  content: '';
   display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  margin: 10px auto 0;
 }
 
-.card:hover .description.short-text {
-  display: none;
+/* --- Navigation --- */
+.navbar {
+  background-color: var(--color-dark);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-
-
-/* Align buttons at the bottom of the card and center them */
-.card-body .btn {
-  align-self: center;  /* Center the button */
-  margin-top: 10px;     /* Space between text and button */
-}
-
-
-/* Ensure that all card text (title and body) looks consistent */
-.card-title {
-  font-size: 1.2rem;
+.navbar-brand {
   font-weight: bold;
-  margin-bottom: 10px;  /* Adds spacing between the title and the text */
-  text-align: center;  /* Centers the title */
+  color: var(--color-light) !important;
 }
-
-.card-text {
-  font-size: 1rem;
-  text-align: justify;
-  white-space: normal; /* Ensures text wraps */
-  overflow: visible; /* Prevents text from being cut off */
-  display: block; /* Ensures text is always shown */
-}
-
-
-
-
-/* Make sure the button is consistent in size */
-.card-body .btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-}
-
-/* Hover effect for cards */
-.card:hover {
-  transform: translateY(-10px);  /* Slightly lifts the card */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);  /* Adds a subtle shadow */
-  transition: all 0.3s ease;  /* Smooth transition for the effect */
-}
-
-/* Hero Section */
-.hero {
-  background-color: #f8f9fa;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
-}
-
-.hero .logo {
-  width: 200px; /* Adjust size based on screen size */
+.nav-logo {
+  width: 30px; 
   height: auto;
-  max-width: 100%; /* Prevents the logo from becoming too large */
+}
+.nav-link {
+  color: var(--color-light) !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: var(--color-primary) !important;
 }
 
-.hero .logo-container {
-  background-color: transparent;
-  padding: 0;
-  border: none;
+/* --- Hero Section --- */
+#hero {
+  background: linear-gradient(135deg, var(--color-bg-light) 0%, #ffece3 100%);
+  padding-top: 10rem; 
+  padding-bottom: 8rem;
+  min-height: 100vh;
+}
+.hero h1 {
+  color: var(--color-dark);
+}
+.hero .lead {
+  color: var(--color-secondary);
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
-
-
-.hero .name-center {
-  text-align: center;
-  flex-grow: 1;
-}
-
-.hero .name-center h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero .name-center p {
-  font-size: 1.1rem;
-  color: #6c757d;
-}
-
-/* About Me Section */
+/* --- About Me Section --- */
 #about {
-  background-color: #f1f1f1;
-  padding: 4rem 0;
+  background-color: var(--color-bg-light);
 }
-
-#about .container {
-  max-width: 1000px; /* Keeps the content centered */
-}
-
-#about .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .col-md-6 {
-  padding: 2rem;
-}
-
-#about .col-md-6 img {
-  max-width: 100%;
-  border-radius: 50%;
+.about-img {
+  max-width: 300px;
+  height: 300px;
   object-fit: cover;
+  border: 5px solid var(--color-primary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* About Me Text */
-#about h2 {
-  font-size: 2.5rem;
-  color: #343a40;
+/* --- SKILLS Section (Creative Resume) --- */
+#skills {
+  background-color: var(--color-light);
+}
+.skill-group-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-top: 5px solid var(--color-primary);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.skill-title {
+  color: var(--color-dark);
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #e0e0e0;
+  padding-bottom: 5px;
+}
+.skill-list {
+  padding: 0;
+  margin: 0;
+}
+.skill-tag {
+  display: inline-block;
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 4px 10px;
+  margin: 4px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-#about p {
-  font-size: 1.1rem;
-  color: #495057;
-  line-height: 1.6;
+/* --- Projects Section --- */
+#projects {
+  background-color: var(--color-bg-light);
+}
+/* Ensure Card Consistency */
+.card {
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+.project-img {
+  width: 100%;
+  height: 250px; /* Consistent height for all images */
+  object-fit: cover; 
+}
+.card-title {
+  font-weight: 600;
+  color: var(--color-dark);
+  text-align: center;
+}
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-footer {
-  background: #222;
+.category-btn {
+  margin: 0 5px;
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+}
+.category-btn.active, .category-btn:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 
+/* --- Contact Section --- */
+.contact-section {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.contact-section .section-title {
+  color: white;
+}
+.contact-section .section-title::after {
+  background: var(--color-primary);
+}
+.contact-link {
+  color: var(--color-primary);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.contact-link:hover {
+  color: #ffd700; /* Gold color for hover */
+}
+.btn-social {
+  margin: 0 5px;
+}
 
-/* Media Queries for responsiveness */
+/* --- Footer --- */
+footer {
+  background-color: var(--color-dark);
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 992px) {
+  #hero {
+      padding-top: 8rem;
+  }
+  .about-img {
+      max-width: 250px;
+      height: 250px;
+  }
+  .col-lg-4, .col-md-6 {
+      /* Ensure cards maintain structure on smaller screens */
+      padding: 0 10px;
+  }
+}
 @media (max-width: 768px) {
-  .hero {
-      flex-direction: column;
-      text-align: center;
+  #hero {
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+      min-height: auto;
   }
-
-  .hero .logo {
-      width: 50px; /* Smaller logo on smaller screens */
-  }
-
-  .hero .name-center h1 {
+  .section-title {
       font-size: 2rem;
   }
-
-  .hero .name-center p {
-      font-size: 1rem;
+  .hero h1 {
+      font-size: 2.5rem;
   }
-
-  /* About Me Section */
-  #about .row {
-      flex-direction: column;
-      text-align: center;
+  .about-img {
+      margin-bottom: 2rem;
   }
-
-  #about .col-md-6 {
-      padding: 1rem;
+  .navbar-toggler {
+      /* Custom color for the toggle icon to match the dark theme */
+      border-color: var(--color-primary);
   }
-}
-
-.description.full-text {
-  display: none;
-}
-
-.card:hover .description.full-text {
-  display: block;
-}
-
-.card:hover .description.short-text {
-  display: none;
 }
